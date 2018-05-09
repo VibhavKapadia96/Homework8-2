@@ -1,0 +1,27 @@
+<h1>Invitations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <!-- <th>ID</th> -->
+      <!-- <th>E-mail</th> -->
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |invitation|}}
+    <tr>
+      <!-- <th>{{invitation.id}}</th> -->
+      <td>{{invitation.index}}{{invitation.email}}?</td>
+    </tr>
+      <tr>
+      <td><input type="radio" name="x">  {{invitation.optionA}}</td>
+  </tr>
+    <tr>
+      <td><input type="radio" name="x">  {{invitation.optionB}}</td>
+  </tr>
+    <tr>
+      <td><input type="radio" name="x">  {{invitation.optionC}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
